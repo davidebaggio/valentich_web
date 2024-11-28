@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --clr-primary: #a8fce0;
+  --clr-dark: black;
+  --clr-light: rgb(241, 241, 241);
+
+  --font-family: "Rubik", sans-serif;
+}
+
+*{
+  border: 1px solid var(--clr-dark);
+}
+
+.font-300{
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.font-400{
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-600{
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.font-900{
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.center-div{
+  margin: auto;
+  width: 80%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 5%;
+}
+
+.nav-item{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.nav-link{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 5px;
+  color: var(--clr-dark);
+  /* background-color: var(--clr-light); */
+  border-radius: 10px;
+}
+
+.nav-link:hover{
+  background-color: var(--clr-primary);
+  transition: 0.3s;
+}
+
+.presentation{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+  border-radius: 10px;
+  background-color: var(--clr-light);
+}
+
+.pres-title{
+  display: flex;
+  justify-content: center;
+}
+
+.but-prenota{
+  text-decoration: none;
+  color: var(--clr-dark);
+  padding: 5px 5px 5px 5px;
+  background-color: var(--clr-primary);
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.but-prenota:hover{
+  background-color: white;
+  border: 3px solid var(--clr-primary);
+  transition: 0.3s;
+}
+
+.image-pres{
+  max-width: 40%;
+}
+
+.image-pres img{
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.container-content{
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.container-content.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media screen and (max-width: 700px){
+  .center-div{
+    width: 95%;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .container-nav{
+    flex-direction: column;
+  }
+
+  .image-pres{
+    max-width: 80%;
+  }
+
+  .presentation{
+    margin-bottom: 5%;
+  }
+}
