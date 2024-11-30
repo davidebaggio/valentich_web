@@ -108,8 +108,8 @@
   color: var(--clr-dark);
   padding: 5px 5px 5px 5px;
   background-color: var(--clr-primary);
-  border: 3px solid white;
   border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.200);
 }
 
 .but-prenota:hover{
@@ -201,6 +201,7 @@
 
 .slide-button{
   background-color: var(--clr-light);
+  color: black;
   border: none;
   font-size: 30px;
   margin-left: 30px;
@@ -335,5 +336,15 @@
 
   .contattaci{
     flex-direction: column;
+  }
+
+  .card-link{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .card-link{
+    width: 100px;
   }
 }
