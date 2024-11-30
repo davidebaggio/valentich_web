@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/doctor_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./src/style.css" />
     <title>Studio Ginecologico Dott. Francesco Valentich</title>
   </head>
@@ -44,31 +45,147 @@
               vostre esigenze. Non esitate a contattarci per prenotare la vostra
               prima visita. Prevenire e' sempre meglio che curare.
             </p>
-            <a href="#" class="but-prenota">Prenota ora</a>
+            <a href="#contact" class="but-prenota">Prenota ora</a>
           </div>
           <div class="image-pres">
             <img src="assets/doctor.jpeg" alt="img_pres" />
           </div>
         </div>
+        <!-- <hr /> -->
 
         <!-- Lo studio -->
         <div class="container container-content font-400">
           <div class="studio" id="studio">
-            <h2 class="studio-title">Il nostro studio</h2>
+            <h2 class="studio-title">Il nostro Studio</h2>
+            <p class="studio-text font-400">
+              Nel nostro studio ginecologico, ci dedichiamo con professionalità
+              e sensibilità alla salute e al benessere della donna in tutte le
+              fasi della vita. Offriamo un ambiente accogliente, attrezzature
+              all'avanguardia e un approccio personalizzato per soddisfare ogni
+              esigenza. I nostri servizi includono consulenze ginecologiche,
+              controllo della gravidanza, prevenzione oncologica, gestione della
+              menopausa e trattamenti per disturbi specifici. La nostra priorità
+              è garantire un’assistenza medica di alta qualità, ascoltando con
+              attenzione ogni paziente e lavorando insieme per promuovere la sua
+              salute e il suo equilibrio. Per noi, la cura della donna è una
+              missione. Venite a trovarci per prendervi cura di voi con fiducia
+              e serenità.
+            </p>
           </div>
         </div>
-
+        <!-- <hr /> -->
         <div class="container container-content font-400">
-          <div class="siamo" id="siamo"></div>
+          <div class="siamo" id="siamo">
+            <h2 class="siamo-title">Chi Siamo</h2>
+            <div class="carousel" data-carousel>
+              <button class="slide-button" data-carousel-button="prev">
+                <span class="prev">&#10140;</span>
+              </button>
+              <ul class="card-list" data-slides>
+                <li class="card-item slide" data-active>
+                  <div class="card-link">
+                    <img src="./assets/doctor1.png" alt="" class="card-image" />
+                    <p class="card-desc font-400">Ginecologo</p>
+                    <h4 class="card-par font-400">Dottore 1</h4>
+                  </div>
+                </li>
+                <li class="card-item slide">
+                  <div class="card-link">
+                    <img src="./assets/doctor2.png" alt="" class="card-image" />
+                    <p class="card-desc font-400">Ginecologo</p>
+                    <h4 class="card-par font-400">Dottore 2</h4>
+                  </div>
+                </li>
+                <li class="card-item slide">
+                  <div class="card-link">
+                    <img src="./assets/doctor3.png" alt="" class="card-image" />
+                    <p class="card-desc font-400">Ginecologo</p>
+                    <h4 class="card-par font-400">Dottore 3</h4>
+                  </div>
+                </li>
+                <li class="card-item slide">
+                  <div class="card-link">
+                    <img src="./assets/doctor4.png" alt="" class="card-image" />
+                    <p class="card-desc font-400">Ginecologo</p>
+                    <h4 class="card-par font-400">Dottore 4</h4>
+                  </div>
+                </li>
+                <li class="card-item slide">
+                  <div class="card-link">
+                    <img src="./assets/doctor5.png" alt="" class="card-image" />
+                    <p class="card-desc font-400">Ginecologo</p>
+                    <h4 class="card-par font-400">Dottore 5</h4>
+                  </div>
+                </li>
+              </ul>
+              <button class="slide-button" data-carousel-button="next">
+                <span class="next">&#10140;</span>
+              </button>
+            </div>
+            <p class="siamo-pres">
+              Il nostro studio si avvale di un team di ginecologi altamente
+              qualificati, con anni di esperienza e costante aggiornamento nelle
+              diverse aree della salute femminile. Ogni professionista è
+              impegnato a offrire un’assistenza attenta e personalizzata,
+              garantendo competenza, empatia e discrezione. Siamo qui per
+              accompagnarvi con professionalità in ogni fase della vostra vita.
+            </p>
+          </div>
         </div>
-
+        <!-- <hr /> -->
         <div class="container container-content font-400">
-          <div class="contattaci" id="contact"></div>
+          <div class="contattaci" id="contact">
+            <div class="tel">
+              <h2 class="contact-title">Contattaci</h2>
+              <p class="prenota">Prenota subito il tuo appuntamento:</p>
+              <a href="tel:+391234567899" class="tel-number">
+                <span class="tel-icon"> &#9990;</span>
+                <span>+39 1234567899</span>
+              </a>
+            </div>
+            <div class="loc">
+              <h2 class="loc-title">Dove Trovarci</h2>
+              <div class="position">
+                <p class="find">&#127919;</p>
+                <a
+                  class="address"
+                  href="https://maps.google.com/maps?q=Via+Riva+del+Grappa,4//3,35013+Cittadella+PD"
+                  target="_blank"
+                  >Via Riva del Grappa, 4/3, 35013 Cittadella PD</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
     <!-- Footer of the page -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-title">
+        <h4 class="font-300">Studio Ginecologico Dott. Francesco Valentich</h4>
+      </div>
+
+      <div class="info font-300">
+        <small>
+          <p class="orari-desc">Orari Ambulatorio:</p>
+          <ul class="orari">
+            <li>Lunedì 08:30-12</li>
+            <li>Martedì 08:30-12</li>
+            <li>Mercoledì 09-17</li>
+            <li>Giovedì 08:30-12</li>
+            <li>Venerdì 08:30-12</li>
+            <li>Sabato 08:30-12</li>
+            <li>Domenica Chiuso</li>
+          </ul>
+        </small>
+      </div>
+
+      <div class="copyright font-300">
+        <small>
+          Copyright © 2024 Francesco Valentich, All rights reserved.
+        </small>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./src/index.js"></script>
